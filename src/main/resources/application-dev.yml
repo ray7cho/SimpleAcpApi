@@ -17,7 +17,7 @@ server:
 
 simpleacp:
   tokenTimeoutMinute: 120
-  refreshTokenTimeoutMinute: 600
+  refreshTokenTimeoutDay: 1
 
 
 

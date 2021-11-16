@@ -58,7 +58,7 @@ public class ResultVo<T> {
     return result;
   }
 
-  private ResultVo(String resultCode, String message) {
+  public ResultVo(String resultCode, String message) {
     this.resultCode = resultCode;
     this.message = message;
   }

@@ -1,5 +1,6 @@
 package com.cubox.simpleacp.api.domain.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
@@ -34,15 +35,18 @@ public class CmnUser implements Serializable {
   @Column(name = "user_nm")
   private String userNm;
 
+  @JsonIgnore
   @Column(name = "user_pw")
   private String userPw;
 
   @Column(name = "author_cd")
   private String authorCd;
 
+  @JsonIgnore
   @Column(name = "pw_updt_yn")
   private String pwUpdtYn;
 
+  @JsonIgnore
   @Column(name = "pw_updt_dt")
   private Timestamp pwUpdtDt;
 
@@ -52,18 +56,22 @@ public class CmnUser implements Serializable {
   @Column(name = "last_conect_dt")
   private Timestamp lastConectDt;
 
+  @JsonIgnore
   @Column(name = "use_yn")
   private String useYn;
 
+  @JsonIgnore
   @Column(name = "regist_id")
   private String registId;
 
   @Column(name = "regist_dt")
   private Timestamp registDt;
 
+  @JsonIgnore
   @Column(name = "updt_id")
   private String updtId;
 
+  @JsonIgnore
   @Column(name = "updt_dt")
   private Timestamp updtDt;
 

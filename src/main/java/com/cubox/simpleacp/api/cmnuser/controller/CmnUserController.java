@@ -1,9 +1,9 @@
-package com.cubox.simpleacp.api.user.controller;
+package com.cubox.simpleacp.api.cmnuser.controller;
 
 import com.cubox.simpleacp.api.common.Constants;
 import com.cubox.simpleacp.api.common.vo.ResultVo;
 import com.cubox.simpleacp.api.domain.entity.CmnUser;
-import com.cubox.simpleacp.api.user.service.UserService;
+import com.cubox.simpleacp.api.cmnuser.service.CmnUserService;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,10 +14,10 @@ import java.util.List;
 @CrossOrigin(origins = "*")
 @RestController
 @RequestMapping({Constants.API.API_PREFIX + Constants.API.API_USER})
-public class UserController {
+public class CmnUserController {
 
     @Autowired
-    private UserService userService;
+    private CmnUserService userService;
 
 
     @GetMapping(value = {"/list"}, produces = Constants.APPLICATION_JSON_UTF8_VALUE)
