@@ -3,14 +3,12 @@ package com.cubox.simpleacp.api.auth.vo;
 import com.cubox.simpleacp.api.domain.entity.CmnUser;
 import com.cubox.simpleacp.api.domain.entity.CmnUserToken;
 import io.swagger.annotations.ApiModelProperty;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 @Builder
 @Getter
 @Setter
+@NoArgsConstructor
 @AllArgsConstructor
 public class LoginResponseVo {
 

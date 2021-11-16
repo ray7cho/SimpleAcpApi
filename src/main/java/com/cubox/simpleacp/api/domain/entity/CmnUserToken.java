@@ -43,9 +43,11 @@ public class CmnUserToken implements Serializable {
   @Column(name = "refresh_expired_dt")
   private Instant refreshExpiredDt;
 
+  @JsonIgnore
   @Column(name = "regist_dt")
   private Instant registDt;
 
+  @JsonIgnore
   @Column(name = "updt_dt")
   private Instant updtDt;
 
