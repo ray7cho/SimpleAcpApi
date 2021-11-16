@@ -1,10 +1,9 @@
 spring:
   datasource:
-
     jdbc-url: jdbc:mysql://pdteam-dev-db.cwbuq98fc0gd.ap-northeast-2.rds.amazonaws.com:3306/simple_acp?useUnicode=true&characterEncoding=utf8&autoReconnetion=true
     username: admin
     password: cubox2021!
-    driver-class-name: org.mariadb.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
     hikari:
       auto-commit: true
       maximum-pool-size: 15

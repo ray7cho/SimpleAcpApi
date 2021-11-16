@@ -13,7 +13,7 @@ public class Constants {
         }
 
         public static final String DEVELOPMENT = "dev";
-        public static final String PRODUCTION = "prd";
+        public static final String PRODUCTION = "prod";
 
     }
 

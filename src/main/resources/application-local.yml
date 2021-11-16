@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    jdbc-url: jdbc:mysql://127.0.0.1:3306/dev?useUnicode=true&characterEncoding=utf8&autoReconnetion=true
+    username: dev
+    password: dev
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      auto-commit: true
+      maximum-pool-size: 15
+      minimum-idle: 15
+  jpa:
+    show-sql: true
+    database: mysql
+
+server:
+  port: 8080
+
+simpleacp:
+  tokenTimeoutMinute: 120
+  refreshTokenTimeoutDay: 1
+
+
+
