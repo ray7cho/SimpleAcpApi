@@ -66,7 +66,6 @@ class AuthControllerTest {
                 .andExpect(jsonPath("resultCode").exists())
                 .andExpect(jsonPath("resultCode").value("ok"))
                 .andDo(print())
-                .andReturn()
                 ;
 
     }
